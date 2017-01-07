@@ -4,7 +4,7 @@
 .DS_Store
 example.tf
 terraform.tfplan
-terraform.tfstate
+#terraform.tfstate
 terraform.tfvars
 bin/
 modules-dev/
@@ -13,9 +13,13 @@ website/.vagrant
 website/.bundle
 website/build
 website/node_modules
+website/vendor
 .vagrant/
 *.backup
-./*.tfstate
+
+# Busted regex? Investigate later.
+#./*.tfstate
+*.tfstate
 .terraform/
 *.log
 *.bak
@@ -26,4 +30,3 @@ website/node_modules
 *.test
 *.iml
 
-website/vendor
